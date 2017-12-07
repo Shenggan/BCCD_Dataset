@@ -1,0 +1,26 @@
+<annotation>
+	<folder>JPEGImages</folder>
+	<filename>BloodImage_00152.jpg</filename>
+	<path>/home/pi/detection_dataset/JPEGImages/BloodImage_00152.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>WBC</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>128</xmin>
+			<ymin>31</ymin>
+			<xmax>281</xmax>
+			<ymax>172</ymax>
+		</bndbox>
+	</object>
+</annotation>
