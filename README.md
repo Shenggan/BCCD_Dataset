@@ -14,7 +14,7 @@ Thanks the original data and annotations from [cosmicad](https://github.com/cosm
   * WBC (White Blood Cell)
   * Platelets (血小板)
 
-  ![](/home/csg/hdd1/DATA/BC_dataset/example.jpg)
+  ![example](./example.jpg)
 
 
 * The structure of the `BC_dataset`
