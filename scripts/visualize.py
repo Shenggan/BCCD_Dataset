@@ -4,7 +4,7 @@
 import xml.etree.ElementTree as ET
 import cv2
 
-image = cv2.imread("JPEGImages/BloodImage_00023.jpg")
+image = cv2.imread("../BCCD/JPEGImages/BloodImage_00023.jpg")
 
 tree = ET.parse("Annotations/BloodImage_00023.xml")
 for elem in tree.iter():

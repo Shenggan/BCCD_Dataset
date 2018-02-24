@@ -4,29 +4,23 @@ import argparse as ap
 import random
 import math
 
-# 程序用法：python create_trainval.py， 程序会根据JPEGImages文件夹下的图片数量及名称
-# 在ImageSets/Main/下生成trainval.txt，train.txt，val.txt，test.txt
-# 默认trainval占80%，trainval中train占70%，文件大致结构如下：
-# .
-# ├── Annotations
-# ├── image
-# ├── ImageSets
-# │   └── Main
-# ├── JPEGImages
-# └── xml
+BCCD_Path = "../BCCD/JPEGImages/"
+Out_Path = "../BCCD/ImageSets/Main/"
 
 if __name__ == "__main__":
     # Argument Parser
     parser = ap.ArgumentParser()
     parser.add_argument("--images", help="Path to images",
-                        default="JPEGImages/")
+                        default=BCCD_Path)
     parser.add_argument("--output", help="Path to output directory",
-                        default="ImageSets/Main/")
+                        default=Out_Path)
     args = vars(parser.parse_args())
+
     images_path = args["images"]
     output_dir = args["output"]
-    trainval_rate = 0.8
-    train_rate = 0.7
+    trainval_rate = 0.9
+    train_rate = 0.8
+
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     images_names = os.listdir(images_path)
