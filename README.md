@@ -6,6 +6,13 @@ Thanks the original data and annotations from [cosmicad](https://github.com/cosm
 
 You can [download](https://github.com/Shenggan/BCCD_Dataset/releases) the `.rec` format for mxnet directly. The `.rec` file can be load by [mxnet.image.ImageDetIter](http://mxnet.incubator.apache.org/api/python/image/image.html?highlight=imagedetiter#mxnet.image.ImageDetIter).
 
+### Data preparation
+Data preparation is important to use machine learning. In this project, the Faster R-CNN algorithm from [keras-frcnn](https://github.com/kbardool/keras-frcnn) for Object Detection is used.
+From this [dataset](https://github.com/Shenggan/BCCD_Dataset), [nicolaschen1](https://github.com/nicolaschen1) developed two Python scripts to make preparation data (CSV file and images) for recognition of abnormalities in blood cells on medical images.
+
+- export.py: it creates the file "test.csv" with all data needed: filename, class_name, x1,y1,x2,y2.
+- plot.py: it plots the boxes for each image and save it in a new directory.
+
 #### Overview of dataset
 
 * You can see a example of the labeled cell image.
@@ -77,4 +84,6 @@ You can [download](https://github.com/Shenggan/BCCD_Dataset/releases) the `.rec`
   	</object>
   </annotation>
   ```
+
+
 
