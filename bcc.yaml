@@ -1,0 +1,4 @@
+train: /content/bcc/images/train
+val: /content/bcc/images/valid
+nc: 3 
+names: ['Platelets', 'RBC', 'WBC']
